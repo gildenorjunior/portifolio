@@ -1,2 +1,18 @@
-@forward "partials/typography";
-@forward "partials/variables";
+@import "partials/typography";
+@import "partials/variables";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "DM Sans", sans-serif;
+  background-color: $dark;
+  max-width: 1140px;
+  min-height: 100vh;
+  margin: 0 auto;
+
+  border: 1px solid #f45;
+}
