@@ -1,0 +1,26 @@
+@import "variables";
+@import "functions";
+
+header {
+  width: 100%;
+  padding: rem(25) 0;
+
+  .container__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    nav ul {
+      display: flex;
+      gap: rem(45);
+      list-style: none;
+      font-size: rem(18);
+      font-weight: 400;
+
+      li a {
+        text-decoration: none;
+        color: $white;
+      }
+    }
+  }
+}

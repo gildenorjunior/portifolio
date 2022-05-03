@@ -1,0 +1,63 @@
+@import "variables";
+
+main {
+  width: 100%;
+
+  .apresentacao {
+    min-height: 90vh;
+    display: flex;
+
+    &__infos {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      width: 50%;
+
+      p {
+        font-size: rem(18);
+        font-weight: 500;
+        color: $gray;
+        margin-top: rem(18);
+      }
+
+      .apresentacao__container-botoes {
+        margin-top: rem(35);
+
+        .btn {
+          min-width: rem(143);
+          height: rem(42);
+          box-sizing: border-box;
+          font-size: rem(14);
+          font-weight: 500;
+          font-family: "DM Sans", sans-serif;
+
+          cursor: pointer;
+        }
+
+        .btn-primario {
+          background-color: $green-light;
+          border: none;
+          margin-right: rem(15);
+        }
+
+        .btn-secundario {
+          background-color: transparent;
+          color: $white;
+          border: 1px solid $gray-200;
+        }
+      }
+    }
+
+    &__img-vector {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-end;
+      width: 50%;
+
+      img {
+        max-width: 300px;
+      }
+    }
+  }
+}
