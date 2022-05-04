@@ -4,6 +4,7 @@ main {
   width: 100%;
 
   .apresentacao {
+    border: 1px solid red;
     min-height: 90vh;
     display: flex;
 
@@ -57,6 +58,59 @@ main {
 
       img {
         max-width: 300px;
+      }
+    }
+  }
+
+  .sobre-mim {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .sobre-mim__descricao {
+      text-align: center;
+      width: 60%;
+
+      h2 {
+        margin: rem(30) 0;
+      }
+
+      p {
+        font-size: rem(18);
+        line-height: rem(32);
+        font-weight: 400;
+        color: $gray;
+      }
+    }
+
+    .sobre-mim__redes-sociais {
+      margin: rem(85) 0;
+      display: flex;
+      gap: rem(100);
+
+      div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .sobre-mim__redes-sociais--border-circle {
+          border-radius: 50%;
+          padding: rem(15);
+          background-color: $gray-400;
+        }
+
+        h5 {
+          margin: rem(5) 0;
+          font-size: rem(18);
+          font-weight: 700;
+          color: $white;
+        }
+
+        p {
+          font-size: rem(16);
+          font-weight: 400;
+          color: $gray;
+        }
       }
     }
   }
