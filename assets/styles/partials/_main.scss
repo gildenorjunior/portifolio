@@ -65,6 +65,7 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-bottom: rem(127);
 
     .sobre-mim__descricao {
       text-align: center;
@@ -115,9 +116,10 @@ main {
   }
 
   .projetos {
+    margin-bottom: rem(127);
+
     h2 {
       text-align: center;
-      margin-top: rem(32);
     }
 
     .projetos__container {
@@ -154,6 +156,38 @@ main {
             font-size: rem(14);
             font-weight: 400;
           }
+        }
+      }
+    }
+  }
+
+  .servicos {
+    margin-bottom: rem(127);
+
+    .titulo-servicos {
+      text-align: center;
+      margin-bottom: rem(32);
+    }
+
+    .container-card-servicos {
+      display: flex;
+      justify-content: space-between;
+
+      .card-servicos {
+        width: rem(350);
+        height: rem(240);
+        padding: rem(30);
+        border-bottom: 3px solid $green-light;
+        border-top: 1px solid $gray-200;
+        border-left: 1px solid $gray-200;
+        border-right: 1px solid $gray-200;
+        background-color: $gray-400;
+
+        > h2 {
+          font-size: rem(32);
+          font-weight: 500;
+          color: $gray;
+          margin-top: rem(30);
         }
       }
     }
