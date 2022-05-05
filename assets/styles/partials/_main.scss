@@ -192,4 +192,28 @@ main {
       }
     }
   }
+
+  .skills {
+    margin-bottom: rem(185);
+
+    .titulo-skills {
+      text-align: center;
+      margin-bottom: rem(32);
+    }
+
+    .container-skills-cards {
+      display: flex;
+      justify-content: space-between;
+
+      .card-skills {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 150px;
+        height: 150px;
+        background-color: $gray-400;
+        border: 1px solid $gray-200;
+      }
+    }
+  }
 }
