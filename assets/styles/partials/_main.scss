@@ -4,7 +4,6 @@ main {
   width: 100%;
 
   .apresentacao {
-    border: 1px solid red;
     min-height: 90vh;
     display: flex;
 
@@ -110,6 +109,51 @@ main {
           font-size: rem(16);
           font-weight: 400;
           color: $gray;
+        }
+      }
+    }
+  }
+
+  .projetos {
+    h2 {
+      text-align: center;
+      margin-top: rem(32);
+    }
+
+    .projetos__container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      margin-top: rem(32);
+
+      .projetos__container-card {
+        background-color: $gray-400;
+        width: rem(350);
+        height: rem(240);
+        padding: rem(25) rem(20);
+        margin-bottom: rem(32);
+
+        .img-card {
+          border: 1px solid $gray-200;
+          background-color: $dark;
+          width: 100%;
+          height: rem(130);
+        }
+
+        .descricao-projetos {
+          margin-top: rem(23);
+
+          p {
+            color: $white;
+            font-size: rem(18);
+            font-weight: 500;
+          }
+
+          span {
+            color: $gray;
+            font-size: rem(14);
+            font-weight: 400;
+          }
         }
       }
     }
