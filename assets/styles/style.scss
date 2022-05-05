@@ -2,6 +2,7 @@
 @import "partials/variables";
 @import "partials/header";
 @import "partials/main";
+@import "partials/footer";
 
 * {
   margin: 0;
@@ -15,6 +16,4 @@ body {
   max-width: 1140px;
   min-height: 100vh;
   margin: 0 auto;
-
-  border: 1px solid #f45;
 }
